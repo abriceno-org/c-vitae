@@ -1,4 +1,6 @@
 import Image from "next/image";
+import nextLogo from "../public/next.svg";
+import comoTan from "../public/como-tan.jpg";
 
 export default function Home() {
   return (
@@ -6,7 +8,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full max-w-3xl flex-col space-y-10 py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src={nextLogo}
           alt="Next.js logo"
           width={100}
           height={20}
@@ -23,8 +25,8 @@ export default function Home() {
 
           <Image
             className="dark:invert"
-            src="/como-tan.jpg"
-            alt="Next.js logo"
+            src={comoTan}
+            alt="como tan"
             width={300}
             height={300}
             priority
